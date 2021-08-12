@@ -4,8 +4,8 @@ export const Scroll = props => {
         <div
             style={{
                 overflowY: 'scroll',
-                border: '1px solid purple',
-                height: '75vh',
+                border: '1px solid black',
+                height: '70vh',
                 scrollbarWidth: 'thin'
             }}>
             {props.children}

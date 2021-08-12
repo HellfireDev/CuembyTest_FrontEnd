@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const useFetchPlayers = (url, search, order, page) => {
+export const useFetchPlayers = (url, search = '', order = '', page) => {
 
     const [state, setState] = useState({
         data: null,
@@ -10,7 +10,7 @@ export const useFetchPlayers = (url, search, order, page) => {
 
     const isMounted = useRef(true);
 
-    //Flag to avoid trying to update an unmounted component
+    //Usage of return clean up to avoid trying to update an unmounted component
     useEffect(() => {
         return () => {
             isMounted.current = false;
