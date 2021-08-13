@@ -48,7 +48,9 @@ export const Players = memo(() => {
                     :
                     (
                         <>
-                            <SortBy setOrder={setOrder} itemsInPage={itemsInPage} />
+                            <SortBy
+                                setOrder={setOrder}
+                                itemsInPage={itemsInPage} />
                             <Scroll>
                                 {
                                     loading

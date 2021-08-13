@@ -8,7 +8,7 @@
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .player-thumbnail{
         width: 25vw;
     }
@@ -20,7 +20,7 @@
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .position-icon, .team-icon, .nation-icon{
       width: 5vw;
     }

@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
+import { fetchTeamSearchData } from '../helpers/fetchTeamSearchData';
 
-export const useFetchPlayers = (url, search = '', order = '', page) => {
+export const useFetchTeam = (url, team) => {
 
+    const isMounted = useRef(true);
     const [state, setState] = useState({
         data: null,
         loading: true,
         error: null
     });
-
-    const isMounted = useRef(true);
 
     //Usage of return clean up to avoid trying to update an unmounted component
     useEffect(() => {
@@ -25,17 +25,20 @@ export const useFetchPlayers = (url, search = '', order = '', page) => {
             error: null
         });
 
-        fetch(url + `?search=${search}&order=${order}&page=${page}`, {
-            headers: { 'x-api-key': process.env.CUEMBY_API_KEY_1 || 'super' },
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (isMounted.current) {
+        fetchTeamSearchData(url, team)
+            .then(response => {
+                if (!!response && isMounted.current) {
                     setState({
-                        data,
+                        data: response,
                         loading: false,
                         error: false
-                    });
+                    })
+                } else if (isMounted.current) {
+                    setState({
+                        data: null,
+                        loading: false,
+                        error: false
+                    })
                 }
             }).catch(error => {
                 if (isMounted.current) {
@@ -45,8 +48,9 @@ export const useFetchPlayers = (url, search = '', order = '', page) => {
                         error: true
                     })
                 }
-            })
-    }, [url, search, order, page]);
+            });
+
+    }, [url, team]);
 
     return state;
 }

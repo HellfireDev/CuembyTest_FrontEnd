@@ -4,7 +4,7 @@
     }
   }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .player-card{
       width: 45vw;
     }
@@ -16,7 +16,7 @@
     }
   }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
     .player-pic{
       width: 12vw;
     }
