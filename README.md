@@ -5,7 +5,7 @@ Test App made with React.js (create-react-app) using custom Hooks and functional
 ## Project Structure
 
 - public/assets: Holds images used in the app.
-- src/
+- Inside src/
 - components/common: Reusable components.
 - components/pages: The 2 main pages of the app and their direct subcomponents.
 - config: Currently only holds API endpoints urls.
