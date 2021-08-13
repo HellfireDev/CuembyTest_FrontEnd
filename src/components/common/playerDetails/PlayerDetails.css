@@ -1,0 +1,27 @@
+.player-details{
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .player-thumbnail{
+        width: 80vw;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .player-thumbnail{
+        width: 25vw;
+    }
+}
+    
+@media only screen and (max-width: 600px) {
+    .position-icon, .team-icon, .nation-icon{
+      width: 10vw;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .position-icon, .team-icon, .nation-icon{
+      width: 5vw;
+    }
+}

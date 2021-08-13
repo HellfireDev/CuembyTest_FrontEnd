@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import { Players } from '../components/pages/players/Players';
 import { Teams } from '../components/pages/teams/Teams';
+import { PlayerDetails } from '../components/common/playerDetails/PlayerDetails';
 
 export const AppRouter = () => {
     return (
@@ -16,7 +17,7 @@ export const AppRouter = () => {
 
                 <Switch>
                     <Route exact path='/players' component={Players} />
-                    {/* <Route exact path='/players/:playerId' component={PlayerDetails} /> */}
+                    <Route exact path='/players/:playerId' component={PlayerDetails} />
                     <Route exact path='/teams' component={Teams} />
 
                     <Redirect to='/players' />

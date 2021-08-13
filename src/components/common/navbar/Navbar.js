@@ -12,8 +12,7 @@ export const Navbar = () => {
                 <img src='./assets/football-strike.png' alt='logo' />
             </Link>
 
-            <div className="navbar-nav nav-justified">
-
+            <div className="navbar-nav w-75 justify-content-around">
                 <NavLink
                     activeClassName="active"
                     className="nav-item nav-link"

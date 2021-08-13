@@ -5,9 +5,9 @@ import { useFetchPlayers } from "../../../hooks/useFetchPlayers";
 import { ErrorScreen } from "../../common/errorScreen/ErrorScreen";
 import { LoadingScreen } from "../../common/loadingScreen/LoadingScreen";
 import { Scroll } from "../../common/scroll/Scroll";
-import { SortBy } from "./SortBy";
+import { SortBy } from "../../common/SortBy";
 import './Players.css';
-import { PlayerCard } from "./PlayerCard";
+import { PlayerCard } from "../../common/playerCard/PlayerCard";
 
 export const Players = memo(() => {
 
@@ -58,7 +58,10 @@ export const Players = memo(() => {
                                         )
                                         :
                                         (
-                                            <div className='card-columns row justify-content-center'>
+                                            <div
+                                                className='card-columns row justify-content-around
+                                                animate__animated animate__fadeIn'
+                                            >
                                                 {
                                                     players.map(player => (
                                                         <PlayerCard
