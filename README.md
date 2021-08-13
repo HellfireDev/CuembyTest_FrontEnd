@@ -21,7 +21,7 @@ Test App made with React.js (create-react-app) using custom Hooks and functional
 - Basic pagination and routing were implemented.
 - Animations were implemented in most of the app.
 
-##Some screenshots
+## Some screenshots
 ![error-screen](https://user-images.githubusercontent.com/52900601/129425880-2286e9c3-7602-42a7-bda0-b2ddd763c8f8.png)
 ![teams-small-screen](https://user-images.githubusercontent.com/52900601/129425881-6f83a77e-8f87-499b-8d49-39c7808e01cc.png)
 ![teams-screen](https://user-images.githubusercontent.com/52900601/129425882-00c4e4f5-bc1a-4add-8d95-e643e6dd2d2a.png)
