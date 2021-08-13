@@ -14,7 +14,7 @@ Test App made with React.js (create-react-app) using custom Hooks and functional
 - Routers: Routing-dom component.
 - index.js/App.js: Top level App components.
 
-##**NOTES:** 
+**NOTES:** 
 - Optional x-api-header verification was implemented.
 - Player details screen was implemented.
 - Responsive design works for all views (some tweaks are still required though).
